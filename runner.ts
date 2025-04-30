@@ -1,4 +1,8 @@
 // runner chrome game function
 Runner.prototype.gameOver = () =>{}
 
-// The game will continue forever after that.
+
+// To increase speed 
+Runner.instance_.setSpeed(1000);
+
+
