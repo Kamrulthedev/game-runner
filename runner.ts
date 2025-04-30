@@ -34,4 +34,10 @@ Runner.instance_.play(); // Resume
 
 
 
+//Gravity  
+Runner.instance_.tRex.config.GRAVITY = 0.1;
+
+
+
+
   
