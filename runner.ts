@@ -26,4 +26,12 @@ setInterval(() => {
 Runner.instance_.distanceRan = 12345;
 
 
+
+
+// Pause & Resume Control
+Runner.instance_.stop(); // Pause
+Runner.instance_.play(); // Resume
+
+
+
   
