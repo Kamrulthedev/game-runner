@@ -6,3 +6,17 @@ Runner.prototype.gameOver = () =>{}
 Runner.instance_.setSpeed(1000);
 
 
+
+// Auto Jump
+setInterval(() => {
+    const tRex = Runner.instance_.tRex;
+    const obstacles = Runner.instance_.horizon.obstacles;
+    if (obstacles.length > 0) {
+      const obstacle = obstacles[0];
+      const distance = obstacle.xPos - tRex.xPos;
+      if (distance < 120 && distance > 0 && tRex.jumping === false) {
+        tRex.startJump();
+      }
+    }
+  }, 10);
+  
