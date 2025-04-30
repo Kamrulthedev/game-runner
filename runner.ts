@@ -21,8 +21,9 @@ setInterval(() => {
   }, 10);
 
 
-  
 
+// score customize
+Runner.instance_.distanceRan = 12345;
 
 
   
